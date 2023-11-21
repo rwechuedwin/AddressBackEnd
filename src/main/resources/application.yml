@@ -1,0 +1,24 @@
+server:
+  port: ${APP_PORT}
+
+spring:
+  application:
+    name: address-back-end-application
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:${DB_PORT}/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddlAuto: update
+    showSql: true
+    database: postgresql
+    databasePlatform: org.hibernate.dialect.PostgreSQLDialect
+    openInView: false
+    generateDdl: true
+    properties:
+      hibernate:
+        formatSql: true
+  profiles:
+    active: env
