@@ -17,7 +17,7 @@ public class CreateWardDto {
     @NotBlank(message = "Name is required")
     private String name;
 
-    @NotNull(message = "Region is required")
-    private UUID districtId;
+    @NotNull(message = "District is required")
+    private UUID district_id;
 
 }

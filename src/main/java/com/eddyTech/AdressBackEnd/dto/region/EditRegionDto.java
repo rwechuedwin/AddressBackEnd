@@ -18,7 +18,7 @@ public class EditRegionDto {
     private String name;
 
     @NotNull(message = "Country is required")
-    private UUID countryId;
+    private UUID country_id;
 
     @NotNull(message = "Id is required")
     private UUID id;

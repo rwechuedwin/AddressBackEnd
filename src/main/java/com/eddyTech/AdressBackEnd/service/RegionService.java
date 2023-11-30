@@ -69,7 +69,7 @@ public class RegionService {
             return response("Region does not exists", false, null);
         }
 
-        var country = countryRepository.findById(request.getCountryId());
+        var country = countryRepository.findById(request.getCountry_id());
 
         if (country.isEmpty()){
             return response("Country does not exists", false, null);

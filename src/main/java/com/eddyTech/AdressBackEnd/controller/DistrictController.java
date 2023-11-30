@@ -38,8 +38,8 @@ public class DistrictController {
             return ResponseHandler.generateResponse(response.getMessage(), false, HttpStatus.NOT_IMPLEMENTED, response.getData());
         }
     }
-
-    public ResponseEntity<Object> editDistrict(EditDistrictDto request){
+    @PostMapping("/edit")
+    public ResponseEntity<Object> editDistrict(@RequestBody @Valid EditDistrictDto request){
         var response = districtService.editDistrict(request);
         if (response.getIsSuccess()){
             return ResponseHandler.generateResponse(response.getMessage(),true,HttpStatus.OK, response.getData());

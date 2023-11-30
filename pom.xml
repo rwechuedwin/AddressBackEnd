@@ -62,6 +62,17 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>6.3.1.Final</version>
 		</dependency>-->
+		<!-- Springfox Swagger2 for Swagger integration -->
+		<!--<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+		</dependency>-->
+
+		<!-- Springfox Swagger UI for the interactive documentation -->
+		<!--<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>

@@ -37,7 +37,7 @@ public class DistrictService {
 
     public InternalResponse createDistrict(CreateDistrictDto request){
 
-        var region = regionRepository.findById(request.getRegionId());
+        var region = regionRepository.findById(request.getRegion_id());
 
         if (region.isEmpty()){
             return response("Region does not exists", false, null);
@@ -70,7 +70,7 @@ public class DistrictService {
             return response("District does not exists", false, null);
         }
 
-        var region = regionRepository.findById(request.getRegionId());
+        var region = regionRepository.findById(request.getRegion_id());
 
         if (region.isEmpty()){
             return response("Region does not exists", false, null);

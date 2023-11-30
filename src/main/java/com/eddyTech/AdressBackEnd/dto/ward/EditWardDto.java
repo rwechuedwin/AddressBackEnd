@@ -18,7 +18,7 @@ public class EditWardDto {
     private String name;
 
     @NotNull(message = "District is required")
-    private UUID districtId;
+    private UUID district_id;
 
     @NotNull(message = "Id is required")
     private UUID id;

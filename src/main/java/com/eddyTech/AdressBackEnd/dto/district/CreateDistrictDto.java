@@ -17,7 +17,7 @@ public class CreateDistrictDto {
     @NotBlank(message = "Name is required")
     private String name;
 
-    @NotNull(message = "Country is required")
-    private UUID regionId;
+    @NotNull(message = "Region is required")
+    private UUID region_id;
 
 }

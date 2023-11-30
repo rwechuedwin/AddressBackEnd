@@ -38,7 +38,7 @@ public class WardService {
 
     public InternalResponse createWard(CreateWardDto request){
 
-        var district = districtRepository.findById(request.getDistrictId());
+        var district = districtRepository.findById(request.getDistrict_id());
 
         if (district.isEmpty()){
             return response("District does not exists", false, null);
@@ -71,7 +71,7 @@ public class WardService {
             return response("Ward does not exists", false, null);
         }
 
-        var district = districtRepository.findById(request.getDistrictId());
+        var district = districtRepository.findById(request.getDistrict_id());
 
         if (district.isEmpty()){
             return response("District does not exists", false, null);
